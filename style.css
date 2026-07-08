@@ -1,10 +1,59 @@
+:root{
+    --text-color:red;
+}
+
 img {
     width:200px;
+    border-radius: 10px;
+    transition:transform 0.3s ease;
 }
+
+img:hover {
+    transform:scale(1.1);
+}
+
 body {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: aquamarine;
     color:firebrick;
     
+}
+
+header{
+    border: 3px solid black;
+    margin: 10px;
+    padding-bottom: 10px;
+    color:var(--text-color)
+}
+footer{
+    border:3px solid black;
+    margin: 10px;
+    padding: 10px;
+    color: var(--text-color);
+}
+
+@keyframes ani {
+    0% {transform: rotate(5deg);}
+    50% {transform: rotate(-5deg);}
+    100% {transform: rotate(5deg);}
+}
+#pfp {
+    animation-name: ani;
+    animation-duration: 3sec;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.bodbody{
+    flex-wrap:wrap;
+    align-items:centre;
+    justify-content:centre;
+}
+
+.boat{
+    display:flex;
+    flex-direction:row;
+    align-items:centre;
+    text-align:centre;
 }

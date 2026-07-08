@@ -1,0 +1,42 @@
+.global{
+    display:grid;
+    grid-template-areas:"a c"
+                        "b d" ;
+    margin: 10px;
+    justify-content:centre;
+    align-items:centre;
+    gap:10px;
+}
+
+
+body{
+    background-image:linear-gradient(to right, cyan 0% , aquamarine 50%, burlywood 75%, cadetblue 100% );
+
+}
+
+.grid-1{
+    grid-area:a;
+    background-color: aquamarine;
+}
+.grid-2{
+    grid-area:b;
+    background-color:burlywood;
+}
+.grid-3{
+    grid-area:c;
+    background-color:cadetblue;
+}
+.grid-4{
+    grid-area:d;
+    background-color:darkkhaki;
+}
+.gradient-text{
+    font-size:50px;
+    font-weight:bold;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background:linear-gradient(250deg, orange 0%, antiquewhite 50%, cornflowerblue 100%);
+    background-size: 100% 100%;
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
